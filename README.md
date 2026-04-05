@@ -18,9 +18,9 @@ The main objective is to evaluate whether PMF reduces the effectiveness of spoof
 - `README.md` — overview of the project, structure, and safe usage notes.
 
 ## What the Report Covers
-The report explains that management frames are essential for Wi‑Fi network control and lifecycle operations, but historically many of them were not protected. This made attacks such as spoofed deauthentication and disassociation possible. The paper also discusses how PMF adds integrity, authenticity, and replay protection for selected management frames, and compares adoption and protection differences between WPA2 and WPA3. fileciteturn0file0
+The report explains that management frames are essential for Wi‑Fi network control and lifecycle operations, but historically many of them were not protected. This made attacks such as spoofed deauthentication and disassociation possible. The paper also discusses how PMF adds integrity, authenticity, and replay protection for selected management frames, and compares adoption and protection differences between WPA2 and WPA3. 
 
-It also concludes that WPA2 without PMF remains vulnerable to deauthentication attacks, while WPA2 with PMF and WPA3 provide stronger resistance when both the access point and client support PMF correctly. fileciteturn0file0
+It also concludes that WPA2 without PMF remains vulnerable to deauthentication attacks, while WPA2 with PMF and WPA3 provide stronger resistance when both the access point and client support PMF correctly. 
 
 ## About `deauth.py`
 The Python file is a **demonstration script for academic lab observation**. At a high level, it:
@@ -61,7 +61,7 @@ Based on the report, the expected security behavior is:
 | WPA2 with PMF | Better protection against deauthentication |
 | WPA3 | Stronger default protection when PMF is supported |
 
-These outcomes align with the project write-up’s analysis and recommendation to enable PMF where client compatibility allows it. fileciteturn0file0
+These outcomes align with the project write-up’s analysis and recommendation to enable PMF where client compatibility allows it. 
 
 ## Requirements
 For analysis and lab discussion, the project assumes familiarity with:
@@ -78,17 +78,17 @@ This project has several important limitations:
 - PMF does **not** protect every possible wireless attack surface.
 - Legacy and IoT devices may not support PMF correctly.
 - Real-world protection depends on both the **client** and the **access point** supporting and negotiating PMF.
-- Implementation flaws, compatibility issues, and configuration mistakes can weaken protections. fileciteturn0file0
+- Implementation flaws, compatibility issues, and configuration mistakes can weaken protections. 
 
 ## Recommendation
 The main recommendation of the project is to:
 - enable PMF where supported,
 - prefer **WPA3** when possible,
 - test device compatibility carefully,
-- avoid leaving enterprise or sensitive WLAN environments on legacy configurations when stronger management-frame protection is available. fileciteturn0file0
+- avoid leaving enterprise or sensitive WLAN environments on legacy configurations when stronger management-frame protection is available. 
 
 ## Academic Summary
-In short, this project demonstrates that **unprotected management frames create a real availability risk in Wi‑Fi networks**, while **PMF significantly reduces that risk** by protecting important management traffic such as deauthentication and disassociation frames. The report argues that PMF should be considered an important defensive control for modern wireless environments. fileciteturn0file0
+In short, this project demonstrates that **unprotected management frames create a real availability risk in Wi‑Fi networks**, while **PMF significantly reduces that risk** by protecting important management traffic such as deauthentication and disassociation frames. The report argues that PMF should be considered an important defensive control for modern wireless environments. 
 
 ## Disclaimer
 This repository is shared for **educational documentation and defensive understanding only**. Any practical testing must stay inside a controlled, authorized lab environment and must follow legal and institutional requirements.
